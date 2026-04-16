@@ -1,2 +1,2 @@
-# jasoc
+# JASOC
 Infraestructura de JASALUD.
