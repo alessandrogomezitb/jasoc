@@ -7,7 +7,6 @@ ISO_DIR="/var/lib/vz/template/iso"
 
 # URLs de descarga
 PFSENSE_URL="https://pinguin.dinus.ac.id/iso/pfSense/iso/pfSense-CE-2.7.2-RELEASE-amd64.iso.gz"
-DEBIAN_URL="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso"
 #SI, ES UNA URL DE UNA UNIVERSIDAD, PERO ES QUE PFSENSE OBLIGA A REGISTRARSE PARA DESCARGAR ISOS AHORA
 
 echo "Descargando pfSense..."
