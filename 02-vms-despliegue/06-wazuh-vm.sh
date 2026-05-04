@@ -10,7 +10,7 @@ TEMPLATE_ID=9000
 
 RAM=8192
 CORES=4
-DISK_STORAGE="local-lvm"
+DISK_STORAGE="local-zfs"
 BRIDGE="vmbr1"   # VLAN trunk → luego se asignará VLAN 30 (GESTION)
 
 echo "Desplegando servidor Wazuh..."

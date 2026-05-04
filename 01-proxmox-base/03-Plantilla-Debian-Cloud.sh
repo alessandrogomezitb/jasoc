@@ -17,14 +17,14 @@ wget -q --show-progress -O $IMAGE_NAME $IMAGE_URL
 echo "Creando la VM base con ID $TEMPLATE_ID..."
 qm create $TEMPLATE_ID --name $TEMPLATE_NAME --memory 2048 --cores 2 --net0 virtio,bridge=vmbr1
 
-# 3. Importar el disco descargado al almacenamiento local de Proxmox (local-lvm)
+# 3. Importar el disco descargado al almacenamiento local de Proxmox (local-zfs)
 echo "Importando el disco a Proxmox (esto puede tardar un poco)..."
-qm importdisk $TEMPLATE_ID $IMAGE_NAME local-lvm
+qm importdisk $TEMPLATE_ID $IMAGE_NAME local-zfs
 
 # 4. Configurar el hardware de la VM para que use el disco importado y Cloud-Init
 echo "Configurando hardware y Cloud-Init..."
-qm set $TEMPLATE_ID --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-$TEMPLATE_ID-disk-0
-qm set $TEMPLATE_ID --ide2 local-lvm:cloudinit
+qm set $TEMPLATE_ID --scsihw virtio-scsi-pci --scsi0 local-zfs:vm-$TEMPLATE_ID-disk-0
+qm set $TEMPLATE_ID --ide2 local-zfs:cloudinit
 qm set $TEMPLATE_ID --boot c --bootdisk scsi0
 qm set $TEMPLATE_ID --serial0 socket --vga serial0
 

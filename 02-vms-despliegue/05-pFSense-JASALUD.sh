@@ -11,7 +11,7 @@ VM_NAME="JASOC-pfSense"
 RAM=2048
 CORES=2
 DISK_SIZE="32"
-DISK_STORAGE="local-lvm"
+DISK_STORAGE="local-zfs"
 ISO_STORAGE="local"
 ISO_NAME="pfSense.iso"
 
