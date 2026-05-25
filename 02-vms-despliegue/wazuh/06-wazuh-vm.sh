@@ -45,8 +45,8 @@ qm resize $VMID scsi0 100G
 echo "Configurando Cloud-Init..."
 
 qm set $VMID --ipconfig0 ip=dhcp
-qm set $VMID --ciuser wazuhadmin
-qm set $VMID --cipassword 'Wazuh123!'
+qm set $VMID --ciuser *****
+qm set $VMID --cipassword '******'
 qm set $VMID --sshkeys ~/.ssh/id_rsa.pub
 
 # --- ARRANQUE AUTOMATICO ---
