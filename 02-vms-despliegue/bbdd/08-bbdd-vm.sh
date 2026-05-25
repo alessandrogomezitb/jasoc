@@ -22,8 +22,8 @@ RAM=4096
 CORES=2
 DISK_SIZE="60G"
 
-CI_USER="dbadmin"
-CI_PASSWORD="CambiaEstaPassword123!"
+CI_USER="*******"
+CI_PASSWORD="**********"
 
 SSH_KEY="/root/.ssh/id_rsa.pub"
 
