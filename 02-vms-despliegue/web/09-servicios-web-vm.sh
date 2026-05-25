@@ -21,8 +21,8 @@ RAM=4096
 CORES=2
 DISK_SIZE="40G"
 
-CI_USER="webadmin"
-CI_PASSWORD="CambiaEstaPassword123!"  # Cambiadla en el primer login
+CI_USER="****"
+CI_PASSWORD="**********"  # Cambiadla en el primer login
 SSH_KEY="/root/.ssh/id_rsa.pub"
 
 echo "========================================"
