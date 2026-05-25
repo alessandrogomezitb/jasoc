@@ -13,7 +13,7 @@ IP_WEB="192.168.10.2"
 DB_NAME="nextcloud_db"
 DB_USER="nextcloud_user"
 # Contraseña segura sin caracteres especiales de bash
-DB_PASS="Jasoc_Nextcloud_2026" 
+DB_PASS="**********" 
 
 echo "[*] 1. Instalando PostgreSQL..."
 apt update -y
