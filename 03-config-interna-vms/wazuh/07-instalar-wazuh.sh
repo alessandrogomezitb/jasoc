@@ -59,7 +59,7 @@ bash "./${INSTALLER}" -a | tee "${LOG_FILE}"
 echo "[6/8] Buscando credenciales..."
 if [ -f "wazuh-install-files.tar" ]; then
   echo "----- Credenciales generadas por Wazuh -----"
-  tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt 2>/dev/null || true
+  tar -O -xvf wazuh-install-files.tar wazuh-install-files/********* 2>/dev/null || true
   echo "-------------------------------------------"
 else
   echo "No se encontró wazuh-install-files.tar en el directorio actual."
