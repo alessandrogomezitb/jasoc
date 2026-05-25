@@ -21,8 +21,8 @@ RAM=4096
 CORES=2
 DISK_SIZE="40G"
 
-CI_USER="zabbixadmin"
-CI_PASSWORD="zabbixadminq"
+CI_USER="*****"
+CI_PASSWORD="*********"
 
 # =========================
 # DESPLIEGUE
