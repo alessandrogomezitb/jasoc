@@ -20,9 +20,9 @@ services:
       - "80:80"
     environment:
       - POSTGRES_HOST=192.168.20.2
-      - POSTGRES_DB=nextcloud_db
-      - POSTGRES_USER=nextcloud_user
-      - POSTGRES_PASSWORD=Jasoc_Nextcloud_2026
+      - POSTGRES_DB=*******
+      - POSTGRES_USER=********
+      - POSTGRES_PASSWORD=**************
     volumes:
       - /opt/jasoc-web/nextcloud:/var/www/html
 EOF
