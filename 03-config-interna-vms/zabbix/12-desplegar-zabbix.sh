@@ -33,14 +33,14 @@ sudo -u postgres dropdb --if-exists zabbix
 sudo -u postgres dropuser --if-exists zabbix
 
 # Creación de usuario y base de datos
-sudo -u postgres psql -c "CREATE USER zabbix WITH PASSWORD 'JasocZabbix2026!';"
+sudo -u postgres psql -c "CREATE USER zabbix WITH PASSWORD '*******';"
 sudo -u postgres createdb -O zabbix zabbix
 
 echo "[*] 5. Importando esquema oficial de Zabbix (Esto tarda 1 minuto)..."
 zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
 
 echo "[*] 6. Inyectando credenciales en la configuración de Zabbix Server..."
-sed -i 's/# DBPassword=/DBPassword=JasocZabbix2026!/' /etc/zabbix/zabbix_server.conf
+sed -i 's/# DBPassword=/DBPassword=**********/' /etc/zabbix/zabbix_server.conf
 
 echo "[*] 7. Configurando Nginx para la IP 192.168.30.6 (Puerto 8080)..."
 # Purga del sitio por defecto que bloquea el puerto 80
